@@ -1,3 +1,123 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Nav */
+    .error-message {
+        color: red;
+        font-size: 0.875em;
+        margin-top: 4px;
+    }
+
+    .hs-dropdown:hover .hs-dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .hs-dropdown-menu {
+        position: absolute;
+        left: 50px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .sticky-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        transition: top 0.3s ease-in-out;
+    }
+
+    @media (min-width: 769px) {
+        #navbar-dropdown {
+            display: flex !important;
+        }
+
+        #menuToggle {
+            display: none;
+            /* Hide the hamburger menu on larger screens */
+        }
+
+        #navbar {
+            transition: all 0.3s ease;
+            /* Add baseooth transition effect */
+        }
+    }
+
+    @media (max-width: 768px) {
+        #topbar {
+            display: none;
+        }
+
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    /* Styles for dropdown menu */
+    #servicesDropdown,
+    #coursesDropdown {
+        display: none;
+    }
+
+    #servicesDropdown.show,
+    #coursesDropdown.show {
+        display: block;
+    }
+
+    /* radial animation */
+    .button--radial {
+        position: relative;
+        color: white;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 1;
+        transition: background-color 0.3s, border-radius 0.5s;
+    }
+
+    .button--radial::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 200%;
+        height: 200%;
+        background: #303392;
+        transition: transform 0.5s ease-out, border-radius 0.5s ease-out;
+        transform: translate(-50%, 50%) scale(0);
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .button--radial:hover::before {
+        transform: translate(-50%, 40%) scale(1);
+    }
+
+/* BANNER */
+.gradient-1 {
+    background: rgb(14, 2, 238);
+    background: linear-gradient(
+        74deg,
+        rgb(156, 151, 247) 7%,
+        rgb(136, 141, 244) 37%,
+        rgba(0, 212, 255, 1) 96%
+    );
+}
+
+.blob {
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(-75 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%230d05c4%22%2F%3E%3Cstop offset=%2233.333%25%22 stop-color=%22%23687ffd%22%2F%3E%3Cstop offset=%2266.667%25%22 stop-color=%22%235cd4ef%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23bef3ff%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M638 642.5Q336 785 294 427.5T596 285q344 215 42 357.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M638 642.5Q336 785 294 427.5T596 285q344 215 42 357.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
