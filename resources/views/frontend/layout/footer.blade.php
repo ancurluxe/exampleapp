@@ -1,8 +1,8 @@
-@extends('frontend.layout.master')
+@extends('layouts.app')
 
 @section('contents')
     {{-- Footer --}}
-{{-- <div class="font-poppins text-white footer-gradient">
+    {{-- <div class="font-poppins text-white footer-gradient">
     <div class="border-b-2">
         <div
             class="py-4 flex flex-col sm:flex-row justify-between text-white mx-2 md:mx-16 lg:mx-24 xl:mx-32 items-center">
@@ -89,5 +89,4 @@
         <p class="text-white text-center">{{ $settings['site_copyright'] ?? '' }}</p>
     </div>
 </div> --}}
-
 @endsection

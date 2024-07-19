@@ -1,4 +1,4 @@
-@extends('frontend.layout.master')
+@extends('layouts.app')
 
 @section('content')
     <!-- banner -->

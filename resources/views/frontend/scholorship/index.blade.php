@@ -1,4 +1,4 @@
-@extends('frontend.layout.master')
+@extends('layouts.app')
 
 @section('content')
     <!-- banner -->
@@ -116,11 +116,11 @@
     {{-- Scholarship  --}}
     <section class="mx-10 my-10 lg:flex  gap-28 space-y-4 lg:space-y-0">
         <div class="relative ">
-{{-- main-img --}}
+            {{-- main-img --}}
             <img class="sm:w-[500px] sm:h-[380px] rounded-br-[80px] rounded-tl-[80px]  "
                 src="{{ asset('frontend-unity/images/sch-1.png') }}" alt="">
 
-                {{-- Outlines --}}
+            {{-- Outlines --}}
             <div
                 class="outline outline-4 outline-blue-900 sm:w-[500px] sm:h-[360px] w-[340px] h-[210px] xl:w-[500px] lg:w-[340px] rounded-br-[80px] rounded-tl-[80px]  absolute sm:-top-4 sm:left-6 left-7 -top-4 ">
             </div>

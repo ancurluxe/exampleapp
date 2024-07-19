@@ -1,4 +1,4 @@
-@extends('frontend.layout.master')
+@extends('layouts.app')
 
 @section('content')
     <!-- banner -->
@@ -41,7 +41,7 @@
 
     {{-- cards --}}
     <div class="flex justify-center flex-wrap">
-{{-- card-1 --}}
+        {{-- card-1 --}}
         <div class="relative hover:bg-background cursor-pointer p-5 rounded-xl">
             <img class="w-80 h-72 rounded-xl" src="{{ asset('frontend-flyeast/images/blog-1.png') }}" alt="" />
             <div class="absolute left-10 right-10 shadow-xl p-1 rounded-xl  bottom-7  bg-white px-2">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-{{-- Card-2 --}}
+        {{-- Card-2 --}}
         <div class="relative hover:bg-background cursor-pointer p-5 rounded-xl">
             <img class="w-80 h-72 rounded-xl" src="{{ asset('frontend-flyeast/images/blog-1.png') }}" alt="" />
             <div class="absolute left-10 right-10 shadow-xl p-1 rounded-xl  bottom-7  bg-white px-2">
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-{{-- Card-3 --}}
+        {{-- Card-3 --}}
         <div class="relative hover:bg-background cursor-pointer p-5 rounded-xl">
             <img class="w-80 h-72 rounded-xl" src="{{ asset('frontend-flyeast/images/blog-1.png') }}" alt="" />
             <div class="absolute left-10 right-10 shadow-xl p-1 rounded-xl  bottom-7  bg-white px-2">

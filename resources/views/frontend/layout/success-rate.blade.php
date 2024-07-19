@@ -1,4 +1,4 @@
-@extends('frontend.layout.master')
+@extends('layouts.app')
 
 @section('content')
     <!--  banner -->
@@ -8,7 +8,8 @@
             <h1 class="text-4xl font-bold"></h1>
             <p class="mt-4 text-xl"></p>
 
-            <div class="gradient-1 hidden sm:block size-44 rounded-full absolute -bottom-24 left-20 overflow-hidden hover:"></div>
+            <div class="gradient-1 hidden sm:block size-44 rounded-full absolute -bottom-24 left-20 overflow-hidden hover:">
+            </div>
 
             <div class="blob size-[600px] -top-10 md:size-[700px] absolute -right-28 s_md:-top-44"></div>
 
@@ -58,8 +59,6 @@
             <img class="w-80 h-80  shadow-lg" src="{{ asset('frontend-unity/images/succ-8.jpg') }}" alt="">
         </div>
     </div>
-
-
 
     {{-- Scholorship--Banner --}}
     <section class="my-12">
